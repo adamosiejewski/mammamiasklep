@@ -1,0 +1,232 @@
+//Add your custom bootstrap variables here, see https://github.com/twbs/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_variables.scss for full list of variables.
+
+@import "bootstrap-sprockets";
+@import "variables";
+@import "bootstrap";
+
+// -- Spree Custom Header and Footer ---------------------
+#spree-header {//gorne menu
+  background-color: #BB4444;
+  background-size: cover;
+  //margin-bottom: $line-height-computed;
+  margin-bottom: 0;
+  color: inherit;
+  //position: fixed;
+  //z-index: 100;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2px;
+  #header {//logo
+    height: 20px;
+    //padding: $line-height-computed 0;
+  }
+
+.row{
+  width: 100%;
+
+}
+
+
+  #logo {
+    padding: 0px;
+    width: auto;
+    height: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  #content{
+    width: 100%;
+    float: left;
+  }
+
+
+.col-md-3.col-sm-6.col-xs-6.product-list-item{
+  padding-left: 50px;
+}
+
+  #top-nav-bar{
+    float: right;
+
+
+  .col-md-12{
+
+    background-color: #0a0a0a;
+    padding: 0px;
+    height: 20px;
+    text-align: justify;
+    margin-top: 0;
+  }
+
+  .cart-info_empty{
+    background-color: #1ca8e2;}
+
+   #carousel-slider-877{
+     float: top;
+     width: 100%;
+     height: 40px;
+     padding: 0px;
+     border-color: #BAC3CF;
+   }
+
+
+  }
+  .nav a {   //pasek na gorze
+    color: white;
+    padding: 20px;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    &:hover, &:focus {
+      background: rgba(white, 0.4);
+    }
+  }
+
+  .navbar {
+    border: 0;
+    margin-bottom: 0;
+    padding-bottom: 5;
+    margin-top: 0;
+  }
+}
+
+//.panel-footer{} - klasa przyciskow z cenami
+
+.container{
+  margin-left: 5px;
+  margin-right: 0px;
+  padding-right: 0px;
+  width: 90%;
+  padding: 0;
+  margin-top: 0;
+}
+
+.carousel.slide {
+  widht: 100%;
+  padding: 20px;
+  margin-left: 0px;
+  //height: 240px;
+}
+  .carousel-inner{
+    widht: 80%;
+    //padding: 20px;
+    //margin-left: 0px;
+   // height: 200px;
+  }
+
+  .item.active{
+   height: auto;
+    width: auto;
+  }
+
+
+.navbar_form{
+  padding: 0px;
+}
+
+.lef-col{
+  background-color: black;
+}
+#spree-footer {
+  //background: $gray-dark;
+  background-color: black;
+  padding-top: $padding-base-horizontal;
+  margin-top: $line-height-computed;
+  color: white;
+}
+
+// -- Spree Layout Custom Rules -------------------------
+
+.alert-notice { @extend .alert-success; }
+.alert-error, .alert-registration_error { @extend .alert-danger; }
+.alert-alert { @extend .alert-info; }
+
+.product-body { //wypelnienia zdjec
+  //background-color: black;
+  height: 170px;
+}
+
+.progress-steps {
+  margin-top: $line-height-computed;
+}
+
+#products.row{
+
+  margin-top: 10px;
+}
+
+#main-nav-bar{
+  background-color: transparent;
+  text-align: justify;
+  height: 20px;
+
+}
+
+
+
+
+a.cart-info.empty{
+
+//  padding: 0px;
+//  margin: 0px;
+  //width: 60px;
+  //text-align: justify;
+}
+
+
+h1 {//tytuly podstron
+ // margin-bottom: 30px;
+ // background-color: black;
+}
+
+// Center cart line items
+table {
+  &.table > tbody > tr {
+    &.line-item td, &.stock-item td {
+      vertical-align: middle;
+    }
+  }
+
+  &#line-items {
+    > tbody, > tfoot {
+      > tr > td {
+        vertical-align: middle;
+
+        &.order-qty {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// Footer links
+#footer-left a {
+  color: lighten($brand-primary, 20);
+
+  &:hover {
+    color: lighten($brand-primary, 10);
+  }
+}
+
+// Updated credit-card image
+#credit-card-image {
+  margin-top: -10px;
+}
+
+.existing-credit-card-list td {
+  padding: 5px;
+}
+
+
+.sidebar-item{
+  width: 50%;
+  padding-left: 20px;
+}
+
+#sidebar{
+  margin-top: 350px;
+}
